@@ -1,14 +1,9 @@
-[build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
-
 [project]
-name = "ftp_server"
+name = "ftp-server"
 version = "0.1.0"
 description = "FTP Server built with Flet"
-authors = [{name = "Your Name", email = "your.email@example.com"}]
 requires = ["flet", "pyftpdlib"]
 
 [tool.flet]
-# Packages that only have source distributions
+# Packages that only have source distributions (for mobile/web builds)
 source_packages = ["pyftpdlib"]
