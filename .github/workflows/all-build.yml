@@ -79,6 +79,9 @@ jobs:
       - name: Setup uv
         uses: astral-sh/setup-uv@v6
 
+      - name: Install Flet
+        run: uv run pip install flet
+
       - name: Install Linux dependencies
         if: matrix.needs_linux_deps
         shell: bash
