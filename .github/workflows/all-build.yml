@@ -4,6 +4,9 @@ name: Build Flet App
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - '*'
 
 env:
   UV_PYTHON: 3.12
