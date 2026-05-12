@@ -42,27 +42,27 @@ jobs:
           # -------- Android --------
           - name: aab
             runner: ubuntu-latest
-            build_cmd: "flet build aab"
+            build_cmd: "flet build aab --source-packages pyftpdlib"
             artifact_path: build/aab
             needs_linux_deps: false
 
           - name: apk
             runner: ubuntu-latest
-            build_cmd: "flet build apk"
+            build_cmd: "flet build apk --source-packages pyftpdlib"
             artifact_path: build/apk
             needs_linux_deps: false
 
           # -------- iOS --------
           - name: ipa
             runner: macos-latest
-            build_cmd: "flet build ipa"
+            build_cmd: "flet build ipa --source-packages pyftpdlib"
             artifact_path: build/ipa
             needs_linux_deps: false
 
           # -------- Web --------
           - name: web
             runner: ubuntu-latest
-            build_cmd: "flet build web"
+            build_cmd: "flet build web --source-packages pyftpdlib"
             artifact_path: build/web
             needs_linux_deps: false
 
